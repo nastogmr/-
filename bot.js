@@ -17,20 +17,14 @@ client.on('message', message => {
   if (message.content.startsWith(prefix + 'wat')) {
   client.user.setActivity(argresult, {type: 'WATCHING'})
      console.log('test' + argresult);
-    message.channel.sendMessage(` ```xl
-'NaSto  ✅  تم تغير'
-```
-الي  [ ** ${argresult} ** ]`)
+    message.channel.sendMessage(` ``'NaSto  ✅  تم تغير'`` [ ** ${argresult} ** ] `)
 } 
 
  
   if (message.content.startsWith(prefix + 'lis')) {
   client.user.setActivity(argresult, {type: 'LISTENING'})
      console.log('test' + argresult);
-    message.channel.sendMessage(` ```xl
-'NaSto  ✅  تم تغير'
-```
-الي  [ ** ${argresult} ** ] `)
+    message.channel.sendMessage(`  ``'NaSto  ✅  تم تغير'`` [ ** ${argresult} ** ]  `)
 } 
 
 
@@ -48,16 +42,12 @@ if (message.content.startsWith(prefix + 'setavatar')) {
 if (message.content.startsWith(prefix + '..')) {
   client.user.setGame(argresult, "https://www.twitch.tv/peery13");
      console.log('test' + argresult);
-    message.channel.sendMessage(` ```xl
-'NaSto  ✅  تم تغير'
-```
-الي  [ ** ${argresult} ** ] `)
+    message.channel.sendMessage(`  ``'NaSto  ✅  تم تغير'`` [ ** ${argresult} ** ] `)
 } 
 if (message.content.startsWith(prefix + 'ply')) {
   client.user.setGame(argresult);
      console.log('test' + argresult);
-    message.channel.sendMessage(`NaSto  ✅  تم تغير'
-الي  [ ** ${argresult} ** ]`)
+    message.channel.sendMessage(` ``'NaSto  ✅  تم تغير'`` [ ** ${argresult} ** ] `)
 } 
 
 
