@@ -11,43 +11,43 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "ID حقك") return;
+  if (message.author.id !== "595653353783033857") return;
 
   
-  if (message.content.startsWith(prefix + 'setwatch')) {
+  if (message.content.startsWith(prefix + 'wat')) {
   client.user.setActivity(argresult, {type: 'WATCHING'})
      console.log('test' + argresult);
-    message.channel.sendMessage(`Watch Now: **${argresult}`)
+    message.channel.sendMessage(`**NaSto , ${argresult} :arrows_counterclockwise: **`)
 } 
 
  
-  if (message.content.startsWith(prefix + 'setlis')) {
+  if (message.content.startsWith(prefix + 'lis')) {
   client.user.setActivity(argresult, {type: 'LISTENING'})
      console.log('test' + argresult);
-    message.channel.sendMessage(`LISTENING Now: **${argresult}`)
+    message.channel.sendMessage(`**NaSto , ${argresult} :arrows_counterclockwise: **`)
 } 
 
 
 if (message.content.startsWith(prefix + 'setname')) {
   client.user.setUsername(argresult).then
-      message.channel.sendMessage(`Username Changed To **${argresult}**`)
+      message.channel.sendMessage(`**NaSto , ${argresult} :arrows_counterclockwise: **`)
   return message.reply("You Can change the username 2 times per hour");
 } 
 
 if (message.content.startsWith(prefix + 'setavatar')) {
   client.user.setAvatar(argresult);
-   message.channel.sendMessage(`Avatar Changed Successfully To **${argresult}**`);
+   message.channel.sendMessage(`تم التغير **${argresult}**`);
 }
 
-if (message.content.startsWith(prefix + 'setT')) {
+if (message.content.startsWith(prefix + 'st')) {
   client.user.setGame(argresult, "https://www.twitch.tv/peery13");
      console.log('test' + argresult);
-    message.channel.sendMessage(`Streaming: **${argresult}`)
+    message.channel.sendMessage(`**NaSto , ${argresult} :arrows_counterclockwise: **`)
 } 
-if (message.content.startsWith(prefix + 'setgame')) {
+if (message.content.startsWith(prefix + 'ply')) {
   client.user.setGame(argresult);
      console.log('test' + argresult);
-    message.channel.sendMessage(`Playing: **${argresult}`)
+    message.channel.sendMessage(`**NaSto , ${argresult} :arrows_counterclockwise: ** `)
 } 
 
 
