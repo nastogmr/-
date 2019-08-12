@@ -5,7 +5,7 @@ var client = new Discord.Client();
 client.on('ready', () => {
   console.log(`By NaSto ${client.user.tag}!`);
 });
-var prefix = '#'
+var prefix = '.'
 
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
@@ -14,14 +14,14 @@ client.on('message', message => {
   if (message.author.id !== "595653353783033857") return;
 
   
-  if (message.content.startsWith(prefix + 'setwatch')) {
+  if (message.content.startsWith(prefix + 'wat')) {
   client.user.setActivity(argresult, {type: 'WATCHING'})
      console.log('test' + argresult);
     message.channel.sendMessage(`Watch Now: **${argresult} احبك يا لي تقرا** `)
 } 
 
  
-  if (message.content.startsWith(prefix + 'setlis')) {
+  if (message.content.startsWith(prefix + 'lis')) {
   client.user.setActivity(argresult, {type: 'LISTENING'})
      console.log('test' + argresult);
     message.channel.sendMessage(`LISTENING Now: **${argresult}احبك يا لي تقرا** `)
@@ -39,12 +39,12 @@ if (message.content.startsWith(prefix + 'setavatar')) {
    message.channel.sendMessage(`Avatar Changed Successfully To **${argresult}**`);
 }
 
-if (message.content.startsWith(prefix + 'setT')) {
+if (message.content.startsWith(prefix + '..')) {
   client.user.setGame(argresult, "https://www.twitch.tv/peery13");
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}احبك يا لي تقرا** `)
 } 
-if (message.content.startsWith(prefix + 'setgame')) {
+if (message.content.startsWith(prefix + 'ply')) {
   client.user.setGame(argresult);
      console.log('test' + argresult);
     message.channel.sendMessage(`Playing: **${argresult}احبك يا لي تقرا** `)
