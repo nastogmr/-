@@ -3,7 +3,7 @@ var fs = require('fs');
 var client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`By NaSto ${client.user.tag}!`);
+  console.log(` By NaSto ${client.user.tag}!`);
 });
 var prefix = '.'
 
@@ -39,7 +39,7 @@ if (message.content.startsWith(prefix + 'setavatar')) {
    message.channel.sendMessage(`Avatar Changed Successfully To **${argresult}**`);
 }
 
-if (message.content.startsWith(prefix + '-')) {
+if (message.content.startsWith(prefix + 's')) {
   client.user.setGame(argresult, "https://www.twitch.tv/peery13");
      console.log('test' + argresult);
     message.channel.sendMessage(` **NaSto  ✅ Streaming ** -->  ** ${argresult} **  `)
